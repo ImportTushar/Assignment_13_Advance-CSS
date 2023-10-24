@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advance CSS Q3</title>
+    <style>
+        body{
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: black;
+        }
+
+        .load{
+            border: 8px solid #0fa;
+            border-top: 8px solid rgb(211, 211, 220);
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin{
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+
+        .load:hover{
+            box-shadow:             0 0 10px #fff,
+                    0 0 21px #fff,
+                    0 0 42px rgb(255, 0, 251),
+                    0 0 82px  rgb(255, 0, 251),
+                    0 0 92px rgb(255, 0, 251),
+                    0 0 102px rgb(255, 0, 251),
+                    0 0 151px rgb(255, 0, 251)  ;;;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="loader">
+            <div class="load"></div>
+        </div>
+    </div>
+</body>
+</html>
